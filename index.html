@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thư viện ảnh tương tác truy cập được</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="gallery.js"></script>
+</head>
+<body onload="addTabFocus()">
+
+  <h1>Thư viện ảnh cá nhân</h1>
+
+  <!-- Khung hiển thị hình ảnh trung tâm -->
+  <div id="image">
+    Hover hoặc Focus (bằng Tab) vào một hình ảnh bên dưới để xem.
+  </div>
+
+  <!-- Danh sách 6 hình ảnh -->
+  <div class="gallery">
+    <img class="preview" 
+         src="https://picsum.photos/id/1015/600/400" 
+         alt="Cảnh núi sông yên bình lúc bình minh" 
+         onmouseover="upDate(this)" 
+         onmouseout="unDo()" 
+         onfocus="upDate(this)" 
+         onblur="unDo()">
+
+    <img class="preview" 
+         src="https://picsum.photos/id/1018/600/400" 
+         alt="Rừng cây xanh mát dịu mắt" 
+         onmouseover="upDate(this)" 
+         onmouseout="unDo()" 
+         onfocus="upDate(this)" 
+         onblur="unDo()">
+
+    <img class="preview" 
+         src="https://picsum.photos/id/1025/600/400" 
+         alt="Chú chó nhỏ đáng yêu cuộn mình" 
+         onmouseover="upDate(this)" 
+         onmouseout="unDo()" 
+         onfocus="upDate(this)" 
+         onblur="unDo()">
+
+    <img class="preview" 
+         src="https://picsum.photos/id/1039/600/400" 
+         alt="Thác nước chảy cuồn cuộn giữa thiên nhiên" 
+         onmouseover="upDate(this)" 
+         onmouseout="unDo()" 
+         onfocus="upDate(this)" 
+         onblur="unDo()">
+
+    <img class="preview" 
+         src="https://picsum.photos/id/1069/600/400" 
+         alt="Sứa biển phát sáng lung linh dưới đại dương" 
+         onmouseover="upDate(this)" 
+         onmouseout="unDo()" 
+         onfocus="upDate(this)" 
+         onblur="unDo()">
+
+    <img class="preview" 
+         src="https://picsum.photos/id/1074/600/400" 
+         alt="Sư tử dũng mãnh giữa đồng cỏ" 
+         onmouseover="upDate(this)" 
+         onmouseout="unDo()" 
+         onfocus="upDate(this)" 
+         onblur="unDo()">
+  </div>
+
+</body>
+</html>
